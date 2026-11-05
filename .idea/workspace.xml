@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0abc3679-1b65-4148-992c-2fa1cd7d8005" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/_layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/partial-react-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/GradientBackdrop.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/SmallHouseCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/explore/PropertyRow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/explore/RangeSlider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/home/PostCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/home/StoriesRow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/navigation/TabBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eslint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metro.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nativewind-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGENTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AGENTS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/expo.icon/Assets/expo-symbol 2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/expo.icon/Assets/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/expo.icon/icon.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/expo-badge-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/expo-badge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/expo-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo-glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/splash-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/splash-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/tabIcons/explore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/tabIcons/explore@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/tabIcons/explore@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/tabIcons/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/tabIcons/home@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/tabIcons/home@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/tutorial-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/reset-project.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/explore.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/animated-icon.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/animated-icon.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/animated-icon.web.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app-tabs.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app-tabs.web.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/external-link.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hint-row.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/themed-text.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/themed-view.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/collapsible.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/web-badge.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/theme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/use-color-scheme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/use-color-scheme.web.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/use-theme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="57" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000006797798" />
+      <entry key="S30" value="1.0019187707239852" />
+      <entry key="S60" value="1.0955296455212258" />
+      <entry key="M2" value="1.8628740830501274" />
+      <entry key="M5" value="5.520948631675426" />
+      <entry key="M10" value="11.184258270918868" />
+      <entry key="M15" value="16.14104357700548" />
+      <entry key="M30" value="28.456634553710593" />
+      <entry key="H1" value="45.098422564728075" />
+      <entry key="H2" value="70.16631016003646" />
+      <entry key="H4" value="110.1125688595353" />
+      <entry key="D1" value="202.81762373800234" />
+      <entry key="W1" value="230.81127960043878" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="2.3642838661685303E-203" />
+      <entry key="S2" value="2.2050828878240663E-51" />
+      <entry key="S5" value="5.467827067969873E-21" />
+      <entry key="S10" value="7.646358574622937E-11" />
+      <entry key="S30" value="6.111527140598866E-4" />
+      <entry key="S60" value="0.039664503943582605" />
+      <entry key="M2" value="0.3383978387760486" />
+      <entry key="M5" value="1.3024463945539333" />
+      <entry key="M10" value="2.301498709023634" />
+      <entry key="M15" value="3.069159942126615" />
+      <entry key="M30" value="5.070418172709632" />
+      <entry key="H1" value="8.438571682375985" />
+      <entry key="H2" value="14.299242673175513" />
+      <entry key="H4" value="22.99888873353378" />
+      <entry key="D1" value="40.965277205421735" />
+      <entry key="W1" value="46.06583446581335" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="2.7796693400269798E-182" />
+      <entry key="S2" value="4.1186542522176915E-46" />
+      <entry key="S5" value="8.572210657535819E-19" />
+      <entry key="S10" value="1.5376639170537182E-9" />
+      <entry key="S30" value="0.0033535608435481873" />
+      <entry key="S60" value="0.16152316264696887" />
+      <entry key="M2" value="1.3524595103962105" />
+      <entry key="M5" value="6.265166426035016" />
+      <entry key="M10" value="13.128444302801007" />
+      <entry key="M15" value="18.941637196718677" />
+      <entry key="M30" value="33.36359245658288" />
+      <entry key="H1" value="53.43817999658831" />
+      <entry key="H2" value="84.40601884064468" />
+      <entry key="H4" value="133.07590864599084" />
+      <entry key="D1" value="243.77526368026756" />
+      <entry key="W1" value="276.87595758398663" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3HgmrImK6z2lcw9XjequNTrIPAG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;junie.plugin.stays.banner.dismissed&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/emmanuel/Desktop/settlein_app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/emmanuel/Desktop/settlein_app/node_modules/typescript/lib&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/navigation" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.10968.77" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0abc3679-1b65-4148-992c-2fa1cd7d8005" name="Changes" comment="" />
+      <created>1786298284052</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1786298284052</updated>
+      <workItem from="1786298285064" duration="5740000" />
+      <workItem from="1786564182245" duration="33000" />
+      <workItem from="1793860669780" duration="23447000" />
+      <workItem from="1793904598955" duration="645000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/home/StoriesRow.tsx</url>
+          <line>34</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
