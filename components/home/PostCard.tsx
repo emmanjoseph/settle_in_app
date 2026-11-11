@@ -11,12 +11,14 @@ import {
     MapPin,
     MessageCircle,
     MoreHorizontal,
+    Share2,
     SlidersHorizontal,
 } from "lucide-react-native";
 
 export type Post = {
     id: string;
     user: string;
+    handle?: string;
     avatar: string;
     subtitle: string;
     image: string;
@@ -25,6 +27,8 @@ export type Post = {
     location: string;
     price: string;
     likes: number;
+    shares?: number;
+    comments?: number;
     postedAgo: string;
     caption: string;
     initiallyLiked?: boolean;
@@ -35,6 +39,12 @@ export type Post = {
 
 const RED = "#f87171";
 const WHITE = "#fafafa";
+
+function formatCount(n: number) {
+    if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1).replace(/\.0$/, "")}M`;
+    if (n >= 1_000) return `${(n / 1_000).toFixed(1).replace(/\.0$/, "")}k`;
+    return String(n);
+}
 
 function Glass({
                    children,
@@ -68,6 +78,29 @@ function Glass({
     );
 }
 
+function RailButton({
+                        onPress,
+                        count,
+                        children,
+                    }: {
+    onPress?: () => void;
+    count?: number;
+    children: React.ReactNode;
+}) {
+    return (
+        <Pressable onPress={onPress} hitSlop={6} className="items-center gap-1">
+            <Glass>
+                <View className="h-12 w-12 items-center justify-center">{children}</View>
+            </Glass>
+            {count != null && (
+                <Text className="font-jakarta-semibold text-xs text-white">
+                    {formatCount(count)}
+                </Text>
+            )}
+        </Pressable>
+    );
+}
+
 export function PostCard({ post }: { post: Post }) {
     const [liked, setLiked] = useState(!!post.initiallyLiked);
     const [saved, setSaved] = useState(false);
@@ -82,35 +115,45 @@ export function PostCard({ post }: { post: Post }) {
                 resizeMode="cover"
             />
 
-            {/* legibility gradients (top text + bottom glass bar) */}
+            {/* legibility gradients */}
             <LinearGradient
-                colors={["rgba(0,0,0,0.55)", "transparent"]}
-                style={{ position: "absolute", top: 0, left: 0, right: 0, height: "60%" }}
+                colors={["rgba(0,0,0,0.5)", "transparent"]}
+                style={{ position: "absolute", top: 0, left: 0, right: 0, height: "45%" }}
             />
             <LinearGradient
-                colors={["transparent", "rgba(0,0,0,0.65)"]}
-                style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "50%" }}
+                colors={["transparent", "rgba(0,0,0,0.7)"]}
+                style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "55%" }}
             />
 
-            {/* publisher */}
-            <View className="absolute inset-x-4 top-4 flex-row items-center justify-between">
-                <View className="flex-row items-center gap-2.5">
-                    <Image
-                        source={{ uri: post.avatar }}
-                        className="h-10 w-10 rounded-full border border-white/60 bg-neutral-100"
-                    />
-                    <View>
-                        <View className="flex-row items-center gap-1.5">
-                            <Text className="font-jakarta-semibold text-sm text-white">
-                                {post.user}
+            {/* top: listing headline + menu */}
+            <View className="absolute inset-x-4 top-4 flex-row items-start justify-between">
+                <View className="flex-1 gap-2 pr-3">
+                    <View className="flex-row items-center gap-2">
+                        <View className="rounded-full bg-teal-600 px-3 py-1">
+                            <Text className="font-jakarta-semibold text-xs text-white">
+                                {post.listingType}
                             </Text>
-                            <BadgeCheck size={14} color="#5eead4" />
                         </View>
-                        <Text className="font-jakarta-regular text-xs text-white/70">
-                            {post.postedAgo} · {post.subtitle}
+                        <Glass>
+                            <Text className="px-3 py-1 font-jakarta-semibold text-xs text-white">
+                                {post.price}
+                            </Text>
+                        </Glass>
+                    </View>
+                    <Text
+                        className="font-jakarta-bold text-xl leading-7 text-white"
+                        numberOfLines={2}
+                    >
+                        {post.title}
+                    </Text>
+                    <View className="flex-row items-center gap-1">
+                        <MapPin size={16} color={WHITE} />
+                        <Text className="font-jakarta-regular text-sm text-white/85">
+                            {post.location}
                         </Text>
                     </View>
                 </View>
+
                 <Pressable hitSlop={10}>
                     <Glass style={{ height: 36, width: 36 }}>
                         <View className="h-9 w-9 items-center justify-center">
@@ -120,99 +163,87 @@ export function PostCard({ post }: { post: Post }) {
                 </Pressable>
             </View>
 
-            {/* headline block */}
-            <View className="absolute inset-x-4 top-20 gap-2">
-                <View className="flex-row items-center gap-2">
-                    <View className="rounded-full bg-teal-600 px-3 py-1">
-                        <Text className="font-jakarta-semibold text-xs text-white">
-                            {post.listingType}
-                        </Text>
-                    </View>
-                    <Glass>
-                        <Text className="px-3 py-1 font-jakarta-semibold text-xs text-white">
-                            {post.price}
-                        </Text>
-                    </Glass>
-                </View>
-                <Text
-                    className="font-jakarta-bold text-xl leading-9 text-white"
-                    numberOfLines={3}
-                >
-                    {post.title}
-                </Text>
-                <View className="flex-row items-center gap-1">
-                    <MapPin size={16} color={WHITE} />
-                    <Text className="font-jakarta-regular text-sm text-white/85">
-                        {post.location}
-                    </Text>
-                </View>
+            {/* right: vertical action rail */}
+            <View className="absolute bottom-4 right-3 items-center gap-4">
+                <RailButton onPress={() => setLiked((v) => !v)} count={likeCount}>
+                    <Heart
+                        size={22}
+                        color={liked ? RED : WHITE}
+                        fill={liked ? RED : "transparent"}
+                    />
+                </RailButton>
+                <RailButton onPress={() => setSaved((v) => !v)}>
+                    <Bookmark
+                        size={20}
+                        color={WHITE}
+                        fill={saved ? WHITE : "transparent"}
+                    />
+                </RailButton>
+                <RailButton count={post.shares ?? 0}>
+                    <Share2 size={20} color={WHITE} />
+                </RailButton>
+                <RailButton count={post.comments ?? 0}>
+                    <MessageCircle size={20} color={WHITE} />
+                </RailButton>
             </View>
 
-            {/* caption + glass action bar */}
-            <View className="absolute inset-x-3 bottom-3 gap-3">
+            {/* bottom-left: publisher + beds/baths + caption */}
+            <View className="absolute bottom-4 left-4 right-20 gap-3">
+                {(post.beds != null || post.baths != null) && (
+                    <View className="flex-row gap-2">
+                        {post.beds != null && (
+                            <Glass>
+                                <View className="flex-row items-center gap-1.5 px-3 py-1.5">
+                                    <BedDouble size={16} color={WHITE} />
+                                    <Text className="font-jakarta-semibold text-xs text-white">
+                                        {post.beds} beds
+                                    </Text>
+                                </View>
+                            </Glass>
+                        )}
+                        {post.baths != null && (
+                            <Glass>
+                                <View className="flex-row items-center gap-1.5 px-3 py-1.5">
+                                    <Bath size={16} color={WHITE} />
+                                    <Text className="font-jakarta-semibold text-xs text-white">
+                                        {post.baths} baths
+                                    </Text>
+                                </View>
+                            </Glass>
+                        )}
+                    </View>
+                )}
+
+                <View className="flex-row items-center gap-2.5">
+                    <Image
+                        source={{ uri: post.avatar }}
+                        className="h-12 w-12 rounded-full border-2 border-white/70 bg-neutral-100"
+                    />
+                    <View className="flex-1">
+                        <View className="flex-row items-center gap-1.5">
+                            <Text
+                                className="font-jakarta-semibold text-base text-white"
+                                numberOfLines={1}
+                            >
+                                {post.user}
+                            </Text>
+                            <BadgeCheck size={14} color="#5eead4" />
+                        </View>
+                        <Text
+                            className="font-jakarta-regular text-xs text-white/70"
+                            numberOfLines={1}
+                        >
+                            {post.handle ? `@${post.handle}` : post.subtitle} · {post.postedAgo}
+                        </Text>
+                    </View>
+                </View>
+
                 <Text
-                    className="px-1 font-jakarta-medium text-sm leading-5 text-white/90"
+                    className="font-jakarta-medium text-sm leading-5 text-white/90"
                     numberOfLines={2}
                 >
                     {post.caption}
                 </Text>
-
-                <View className="flex-row items-center gap-2">
-                    {/* message + beds + baths */}
-                    <Glass style={{ flex: 1 }}>
-                        <Pressable className="m-1.5 h-10 w-10 items-center justify-center rounded-full bg-white/25">
-                            <MessageCircle size={20} color={WHITE} />
-                        </Pressable>
-
-                        <View className="flex-1 flex-row items-center justify-evenly pr-2">
-                            {post.beds != null && (
-                                <View className="flex-row items-center gap-1.5">
-                                    <BedDouble size={20} color={WHITE} />
-                                    <Text className="font-jakarta-semibold text-sm text-white">
-                                        {post.beds} beds
-                                    </Text>
-                                </View>
-                            )}
-                            {post.baths != null && (
-                                <View className="flex-row items-center gap-1.5">
-                                    <Bath size={20} color={WHITE} />
-                                    <Text className="font-jakarta-semibold text-sm text-white">
-                                        {post.baths} baths
-                                    </Text>
-                                </View>
-                            )}
-                        </View>
-                    </Glass>
-
-                    {/* save */}
-                    <Pressable onPress={() => setSaved((v) => !v)} hitSlop={6}>
-                        <Glass>
-                            <View className="h-[52px] w-[52px] items-center justify-center">
-                                <Bookmark
-                                    size={20}
-                                    color={WHITE}
-                                    fill={saved ? WHITE : "transparent"}
-                                />
-                            </View>
-                        </Glass>
-                    </Pressable>
-
-                    {/* like */}
-                    <Pressable onPress={() => setLiked((v) => !v)} hitSlop={6}>
-                        <Glass>
-                            <View className="h-[52px] w-[52px] items-center justify-center">
-                                <Heart
-                                    size={22}
-                                    color={liked ? RED : WHITE}
-                                    fill={liked ? RED : "transparent"}
-                                />
-                                <Text className="font-jakarta-semibold text-[10px] text-white">
-                                    {likeCount}
-                                </Text>
-                            </View>
-                        </Glass>
-                    </Pressable>
-                </View>
             </View>
         </View>
     );
