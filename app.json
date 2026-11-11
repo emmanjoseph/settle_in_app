@@ -40,7 +40,9 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      ["expo-image-picker", { "photosPermission": "SettleIn needs access to your photos to create posts." }],
+      "expo-video"
     ],
     "experiments": {
       "typedRoutes": true,

@@ -7,6 +7,7 @@ import { ArrowUpDown, ChevronDown, ChevronRight, Map, Search, SlidersHorizontal 
 import { PropertyRow, type Property } from "@/components/explore/PropertyRow";
 import { RangeSlider, TEAL, formatPrice } from "@/components/explore/RangeSlider";
 import {GradientBackdrop} from "@/components/GradientBackdrop";
+import {router} from "expo-router";
 
 // ---- placeholder data (swap for your API) ----------------------------------
 const PROPERTIES: Property[] = [
@@ -14,26 +15,34 @@ const PROPERTIES: Property[] = [
     id: "1", title: "Modern Villa Estate", location: "Beverly Hills, CA", priceLabel: "$2.4M", price: 2_400_000,
     type: "Villa", beds: 5, baths: 4, area: "4.2k",
     image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=400",
+    latitude: 34.063380,
+    longitude: -118.358080,
   },
   {
     id: "2", title: "Downtown Loft", location: "Manhattan, NYC", priceLabel: "$850K", price: 850_000,
     type: "Apartment", beds: 2, baths: 2, area: "1.5k",
     image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400",
+    latitude: 40.712776,
+    longitude: -74.005974,
   },
   {
     id: "3", title: "Family Suburban Home", location: "Austin, TX", priceLabel: "$620K", price: 620_000,
     type: "House", beds: 4, baths: 3, area: "2.8k",
     image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400",
+    latitude: 30.267153,
+    longitude: -97.743060,
   },
   {
     id: "4", title: "Sky Penthouse Suite", location: "Miami Beach, FL", priceLabel: "$3.1M", price: 3_100_000,
     type: "Apartment", beds: 3, baths: 3, area: "3.5k",
     image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=400",
+    latitude: 30.267153,
+    longitude: -97.743060,
   },
 ];
 // ----------------------------------------------------------------------------
 
-const TYPES = ["All Types", "House", "Apartment", "Villa", "Studio", "Commercial"] as const;
+const TYPES = ["All Types","Bed sitter", "1 Bedroom","2 Bedroom","3 Bedroom","Main house", "Apartment", "Villa", "Studio", "Commercial"] as const;
 const SORTS = ["Newest", "Price: Low", "Price: High"] as const;
 const PRICE_MIN = 0;
 const PRICE_MAX = 5_000_000;
@@ -88,7 +97,7 @@ export default function ExploreScreen() {
           {/* sticky: title, search, type chips */}
           <View className="gap-4  pb-4" style={{ paddingTop: insets.top + 12 }}>
             <View className="flex-row items-center justify-between px-4">
-              <Text className="font-jakarta-bold text-[30px] leading-9 tracking-tight text-neutral-950">
+              <Text className="font-jakarta-bold text-[25px] leading-9 tracking-tight text-neutral-950">
                 Explore
               </Text>
               <Pressable className="">
@@ -134,7 +143,7 @@ export default function ExploreScreen() {
             </ScrollView>
           </View>
 
-          <View className="gap-6 px-6 pb-8 pt-2">
+          <View className="gap-6 px-4 pb-20 pt-2">
             {/* price range */}
             <View className="gap-4">
               <View className="flex-row items-center justify-between">
@@ -145,29 +154,30 @@ export default function ExploreScreen() {
               </View>
               <RangeSlider min={PRICE_MIN} max={PRICE_MAX} step={PRICE_STEP} value={range} onChange={setRange} />
               <View className="flex-row justify-between">
-                <Text className="font-jakarta-regular text-xs text-neutral-500">$0</Text>
-                <Text className="font-jakarta-regular text-xs text-neutral-500">$5M+</Text>
+                <Text className="font-jakarta-bold text-sm text-neutral-500">KES 0</Text>
+                <Text className="font-jakarta-bold text-sm text-neutral-500">KES 5M+</Text>
               </View>
             </View>
 
             {/* map view card */}
             <Pressable
                 // TODO: navigate to your map screen (design screen 14)
+                onPress={() => router.push("/explore-by-map")}
                 className="flex-row items-center justify-between rounded-3xl bg-neutral-100 p-3"
             >
               <View className="flex-row items-center gap-5">
-                <View className="h-14 w-14 items-center justify-center rounded-lg bg-white">
-                  <Map size={20} color="#0a0a0a" />
+                <View className="h-[50px] w-[50px] items-center justify-center rounded-2xl bg-white">
+                  <Map size={25} color="#a3a3a3" />
                 </View>
                 <View>
-                  <Text className="font-jakarta-semibold text-sm text-neutral-950">View on Map</Text>
-                  <Text className="font-jakarta-medium text-xs text-neutral-700">See properties around you</Text>
+                  <Text className="font-jakarta-bold text-base text-neutral-600">View on Map</Text>
+                  <Text className="font-jakarta-semibold text-sm text-neutral-600">See properties around you</Text>
                 </View>
               </View>
               <ChevronRight size={20} color="#737373" />
             </Pressable>
 
-            {/* results header */}
+            {/* results header */}~`
             <View className="flex-row items-center justify-between pt-2">
               <View>
                 <Text className="font-jakarta-bold text-lg text-neutral-950">Results</Text>

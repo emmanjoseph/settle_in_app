@@ -67,9 +67,9 @@ export function RangeSlider({ min, max, step, value, onChange }: Props) {
 
     return (
         <View className="h-6 justify-center" onLayout={(e) => setWidth(e.nativeEvent.layout.width)}>
-            <View className="absolute inset-x-0 h-1.5 rounded-full bg-neutral-100" />
+            <View className="absolute inset-x-0 h-2 rounded-full bg-neutral-100" />
             <View
-                className="absolute h-1.5 rounded-full"
+                className="absolute h-2 rounded-full"
                 style={{ left: toX(lo) + THUMB / 2, width: Math.max(toX(hi) - toX(lo), 0), backgroundColor: TEAL }}
             />
             <View

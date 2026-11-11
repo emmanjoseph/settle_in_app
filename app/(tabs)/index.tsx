@@ -7,6 +7,7 @@ import { PostCard, type Post } from "@/components/home/PostCard";
 import { StoriesRow, type Story } from "@/components/home/StoriesRow";
 import { GradientBackdrop } from "@/components/GradientBackdrop";
 import SmallHouseCard from "@/components/SmallHouseCard";
+import {ReelsRow} from "@/components/home/Reelsrow";
 
 // ---- placeholder data (swap for your API) ----------------------------------
 const YOUR_AVATAR =
@@ -126,6 +127,8 @@ export default function HomeScreen() {
                   <SmallHouseCard key={h.title} house={h} />
               ))}
             </View>
+
+            <ReelsRow/>
           </View>
         </ScrollView>
       </View>

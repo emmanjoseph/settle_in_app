@@ -9,7 +9,7 @@ export function GradientBackdrop({ height = 340 }: { height?: number }) {
     return (
         <LinearGradient
             pointerEvents="none"
-    colors={["#99f6e4", "#ccfbf1", "#fafafa"]} // teal-200 → teal-100 → neutral-50
+    colors={["#e3f2fd", "#dbefff", "#ffffff"]} // teal-200 → teal-100 → neutral-50
     locations={[0, 0.5, 1]}
     style={{ position: "absolute", top: 0, left: 0, right: 0, height }}
     />
