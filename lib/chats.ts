@@ -116,6 +116,15 @@ export const CONVERSATIONS: Conversation[] = [
         unread: 0,
         messages: stub("dp", "Open house this Saturday at 2pm — see you there!", "1:05 PM"),
     },
+    {
+        id: "sonniey",
+        name: "Sonniey Gurl",
+        avatar: av("photo-1472099645785-5658abf4ff4e"),
+        lastMessage: "Mannu Come butter up my biscuit",
+        time: "2 days",
+        unread: 0,
+        messages: stub("dp", "Mannu Come butter up my biscuit", "1:05 PM"),
+    },
 ];
 
 export const getConversation = (id?: string) => CONVERSATIONS.find((c) => c.id === id);

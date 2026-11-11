@@ -4,43 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0abc3679-1b65-4148-992c-2fa1cd7d8005" name="Changes" comment="">
+    <list default="true" id="0abc3679-1b65-4148-992c-2fa1cd7d8005" name="Changes" comment="Property cards Ui updates , profile screens , messages and chat screens">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/forgot-password.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/sign-in.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/sign-up.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/chat/[id].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/details/[id].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/directions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/explore-by-map.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/reels.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/schedule-visit.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/visit-confirmed.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/DirectionsMap.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/WordMark.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/auth/AuthKit.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/home/Reelsrow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/post/PostField.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/chats.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/properties.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/reels.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(tabs)/explore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/explore.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(tabs)/messages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/messages.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/upload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/upload.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/GradientBackdrop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GradientBackdrop.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/explore/PropertyRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/explore/PropertyRow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/explore/RangeSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/explore/RangeSlider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/PostCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/PostCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navigation/TabBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation/TabBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/Reelsrow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/Reelsrow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/chats.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/chats.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="75" />
+    <option name="cachedIndexableFilesCount" value="77" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -72,62 +43,65 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="3.001504213553662E-60" />
-      <entry key="MS500" value="1.2458558375925032E-12" />
-      <entry key="S2" value="0.0010567080680378678" />
-      <entry key="S5" value="0.06664811266844502" />
-      <entry key="S10" value="0.3011002803849463" />
-      <entry key="S30" value="1.1755599416809042" />
-      <entry key="S60" value="2.132041682706629" />
-      <entry key="M2" value="3.150967150562951" />
-      <entry key="M5" value="4.121556944260065" />
-      <entry key="M10" value="4.55927058749051" />
-      <entry key="M15" value="4.967628753934688" />
-      <entry key="M30" value="8.505768473244707" />
-      <entry key="H1" value="20.96187943820825" />
-      <entry key="H2" value="44.965292475603235" />
-      <entry key="H4" value="79.58488190036962" />
-      <entry key="D1" value="300.05991596983824" />
-      <entry key="W1" value="566.9610193705361" />
+      <entry key="MS100" value="1.3407650239899307" />
+      <entry key="MS500" value="2.4282700913383475" />
+      <entry key="S2" value="3.6993049812279066" />
+      <entry key="S5" value="4.367840638859769" />
+      <entry key="S10" value="4.661129160183093" />
+      <entry key="S30" value="4.881518499009099" />
+      <entry key="S60" value="4.94003776621409" />
+      <entry key="M2" value="4.969836139095145" />
+      <entry key="M5" value="4.993904596571481" />
+      <entry key="M10" value="5.3787597843937345" />
+      <entry key="M15" value="6.854552597013519" />
+      <entry key="M30" value="17.224873889579847" />
+      <entry key="H1" value="42.85252660129692" />
+      <entry key="H2" value="82.62205439018103" />
+      <entry key="H4" value="134.68558476200639" />
+      <entry key="D1" value="385.9588629930401" />
+      <entry key="W1" value="676.6809181597523" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0000000000000049" />
-      <entry key="M5" value="1.0000047129668417" />
-      <entry key="M10" value="1.005955498354188" />
-      <entry key="M15" value="1.0690583191613185" />
-      <entry key="M30" value="1.878983487079653" />
-      <entry key="H1" value="4.626726292830921" />
-      <entry key="H2" value="9.765574528201649" />
-      <entry key="H4" value="17.830368695061736" />
-      <entry key="D1" value="65.79499576603139" />
-      <entry key="W1" value="115.33516908819225" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="9.497663216733135E-200" />
+      <entry key="S30" value="4.893475909962813E-67" />
+      <entry key="S60" value="8.57501641365984E-34" />
+      <entry key="M2" value="3.9482576291936395E-17" />
+      <entry key="M5" value="4.10900860245219E-7" />
+      <entry key="M10" value="9.061253340135272E-4" />
+      <entry key="M15" value="0.011920349113901921" />
+      <entry key="M30" value="0.17506040197658743" />
+      <entry key="H1" value="1.0501466468835603" />
+      <entry key="H2" value="4.250619534760591" />
+      <entry key="H4" value="11.654533624398853" />
+      <entry key="D1" value="61.84620937050585" />
+      <entry key="W1" value="115.79733723387545" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="6.145968933451652E-5" />
-      <entry key="MS500" value="0.1437864866697276" />
-      <entry key="S2" value="0.6167603143009832" />
-      <entry key="S5" value="0.8882265169387692" />
-      <entry key="S10" value="1.20365969232544" />
-      <entry key="S30" value="2.125899204066836" />
-      <entry key="S60" value="3.085005531890762" />
-      <entry key="M2" value="4.111959627018188" />
-      <entry key="M5" value="5.099318649442675" />
-      <entry key="M10" value="5.5524044002315005" />
-      <entry key="M15" value="6.026224272894753" />
-      <entry key="M30" value="10.369028462778363" />
-      <entry key="H1" value="25.563385797513863" />
-      <entry key="H2" value="54.70303462124029" />
-      <entry key="H4" value="97.39082282890816" />
-      <entry key="D1" value="365.84146280053227" />
-      <entry key="W1" value="682.2929495408913" />
+      <entry key="MS100" value="1.0991301188285594" />
+      <entry key="MS500" value="2.236317214059091" />
+      <entry key="S2" value="3.6125606075156353" />
+      <entry key="S5" value="4.3256842941564155" />
+      <entry key="S10" value="4.638440403894065" />
+      <entry key="S30" value="4.873554392606049" />
+      <entry key="S60" value="4.936002584120466" />
+      <entry key="M2" value="4.96780503108709" />
+      <entry key="M5" value="4.9930865309661625" />
+      <entry key="M10" value="5.37917371386661" />
+      <entry key="M15" value="6.865953386636354" />
+      <entry key="M30" value="17.39894230313823" />
+      <entry key="H1" value="43.8990004375331" />
+      <entry key="H2" value="86.86276419215427" />
+      <entry key="H4" value="146.3256233307692" />
+      <entry key="D1" value="447.79271062754424" />
+      <entry key="W1" value="792.4750432747048" />
     </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8,
@@ -196,8 +170,26 @@
       <workItem from="1794307587189" duration="1118000" />
       <workItem from="1794310776103" duration="2548000" />
       <workItem from="1794316124873" duration="8337000" />
-      <workItem from="1794379942021" duration="7974000" />
+      <workItem from="1794379942021" duration="11696000" />
+      <workItem from="1794426800632" duration="3496000" />
     </task>
+    <task id="LOCAL-00001" summary="explore page , explore page by map , added auth kit and auth screens and property details page">
+      <option name="closed" value="true" />
+      <created>1794395045236</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1794395045236</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Property cards Ui updates , profile screens , messages and chat screens">
+      <option name="closed" value="true" />
+      <created>1794395162879</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1794395162879</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +205,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="explore page , explore page by map , added auth kit and auth screens and property details page" />
+    <MESSAGE value="Property cards Ui updates , profile screens , messages and chat screens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Property cards Ui updates , profile screens , messages and chat screens" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

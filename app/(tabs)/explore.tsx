@@ -177,7 +177,7 @@ export default function ExploreScreen() {
               <ChevronRight size={20} color="#737373" />
             </Pressable>
 
-            {/* results header */}~`
+            {/* results header */}
             <View className="flex-row items-center justify-between pt-2">
               <View>
                 <Text className="font-jakarta-bold text-lg text-neutral-950">Results</Text>

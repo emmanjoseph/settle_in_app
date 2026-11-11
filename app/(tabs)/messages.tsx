@@ -105,7 +105,7 @@ export default function MessagesScreen() {
             renderItem={({ item }) => <Row c={item} />}
             keyboardShouldPersistTaps="handled"
             showsVerticalScrollIndicator={false}
-            contentContainerStyle={{ paddingBottom: 24 }}
+            contentContainerStyle={{ paddingBottom:70 }}
             ListEmptyComponent={
               <View className="items-center gap-1 px-1 py-16">
                 <Text className="font-jakarta-semibold text-sm text-neutral-950">No conversations found</Text>
